@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Streaming</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <header class="hero">
+                <p class="eyebrow">Radio online</p>
+                <h1 id="radio-title">Nombre de la radio</h1>
+                <p id="radio-tagline" class="tagline">Tu compania durante el dia.</p>
+            </header>
+
+            <section class="player-box">
+                <div class="player-controls">
+                    <button id="play-button" class="play-button" type="button" aria-pressed="false">
+                        <span class="play-icon" id="play-icon">&gt;</span>
+                        <span id="play-label">Escuchar ahora</span>
+                    </button>
+                    <button id="sync-button" class="sync-button" type="button">
+                        Presione aqu&iacute; para escuchar en vivo
+                    </button>
+                </div>
+                <p id="player-status" class="player-status">Presiona el boton para escuchar la radio.</p>
+                <p class="player-note">
+                    Puede pausar el audio si lo desea, pero el reproductor se sincronizar&aacute; autom&aacute;ticamente con la transmisi&oacute;n en vivo cada minuto.
+                </p>
+            </section>
+
+            <section class="logo-box" aria-label="Logo de la radio">
+                <img id="radio-logo" class="radio-logo" src="" alt="logo-radio">
+            </section>
+
+            <section class="info-box">
+                <h2>Resumen</h2>
+                <p id="radio-description">Aqui ira la descripcion de la radio.</p>
+            </section>
+
+            <section class="info-box">
+                <h2>Horario</h2>
+                <p id="radio-schedule">Lunes a domingo</p>
+            </section>
+        </section>
+    </main>
+
+    <audio id="radio-player" preload="none"></audio>
+
+    <script src="radio-config.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
